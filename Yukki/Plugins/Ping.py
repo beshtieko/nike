@@ -32,16 +32,16 @@ Disk: {disk}%"""
     return stats
 
 
-@app.on_message(filters.command(["ping", f"ping@{BOT_USERNAME}"]))
-async def ping(_, message):
+@app.on_message(filters.command(["fer", f"fer@{BOT_USERNAME}"]))
+async def fer(_, message):
     start = datetime.now()
     response = await message.reply_photo(
         photo="Utils/Query.jpg",
-        caption=">> Nyepong!",
+        caption=">> Nyefer!",
     )
     uptime = await bot_sys_stats()
     end = datetime.now()
     resp = (end - start).microseconds / 1000
     await response.edit_text(
-        f"**Pong!**\n`✨{resp} ms`\n\n<b><u>{MUSIC_BOT_NAME} Statistik Sistem:</u></b>{uptime}"
+        f"**ferdi!**\n`✨{resp} ms`\n\n<b><u>{MUSIC_BOT_NAME} Statistik Sistem:</u></b>{uptime}"
     )
