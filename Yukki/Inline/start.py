@@ -61,7 +61,7 @@ def start_pannel():
             [
                  InlineKeyboardButton(
                     text="🥸 ᴏᴡɴᴇʀ 🥸", 
-                url=f"https://t.me/gausahsokablunyet",
+                url=f"https://t.me/per_dii",
                )
             ],
         ]
